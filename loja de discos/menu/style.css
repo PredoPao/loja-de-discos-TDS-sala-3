@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightskyblue;
+    height: 100vh;
+    width: auto;
+    background-position-x: -200px;
+    size: 100vw;
+}
+
+.PedidoCardapio{
+    padding-top: 50px;
+    color: rgb(255, 249, 249);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    gap: 10px;
+}
+
+
+.imagem-logo{
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.BandasMenu{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+
+.BandasMenu:hover{
+    cursor: pointer;
+    opacity: 0,1;
+    color: black;
+}
+
+.BandasMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+  }
+  
+  .BandasMenu:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+  }
+  
+  .BandasMenu:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+  }
+  
+  .BandasMenu:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+.EstilosM{
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.EstilosM {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.EstilosM:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.EstilosM:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.EstilosM:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.pedido{
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+
+.pedido {
+background-color: #FFFFFF;
+border: 1px solid #222222;
+border-radius: 8px;
+box-sizing: border-box;
+color: #222222;
+cursor: pointer;
+display: inline-block;
+font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+margin: 0;
+outline: none;
+padding: 13px 23px;
+position: relative;
+text-align: center;
+text-decoration: none;
+touch-action: manipulation;
+transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+user-select: none;
+-webkit-user-select: none;
+width: auto;
+}
+
+.pedido:focus-visible {
+box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+transition: box-shadow .2s;
+}
+
+.pedido:active {
+background-color: #F7F7F7;
+border-color: #000000;
+transform: scale(.96);
+}
+
+.pedido:disabled {
+border-color: #DDDDDD;
+color: #DDDDDD;
+cursor: not-allowed;
+opacity: 1;
+}

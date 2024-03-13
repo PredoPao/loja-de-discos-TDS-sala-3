@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="../pedido/style.css">
+    <script src="../pedido/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrap-all">
+    <div id="error" class="error-modal">
+        <p>Insira um nome para começar</p>
+        <button class="error-btn" onclick="fechar()">Entendi!!!</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button onclick="window.location.href='../menu/page.html'" class="voltarbtn">voltar</button>
+    </div>
+    <h1>Pedido</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+    </div>
+    <button onclick="comecar()" type="button" class="btn btn-outline-dark">Começar</button>
+    <div id="select-div">
+    <h2>Olá <span id="nomePrint"></span>, vamos começar seu pedido!!!</h2>
+    <br>
+      <select class="form-select" aria-label="Default select example" id="selectRock">
+        <option selected>Selecione seu album de Rock</option>
+        <option value="The Bends">The Bends</option>
+        <option value="Pablo Honey">Pablo Honey</option>
+        <option value="Ok Computer">Ok Computer</option>
+        <option value="The Colour And The Shape">The Colour And The Shape</option>
+        <option value="Killers">Killers</option>
+        <option value="nenhumRock">nenhum</option>
+      </select>
+
+      <select class="form-select" aria-label="Default select example" id="selectJazz">
+        <option selected>Selecione seu album de Jazz</option>
+        <option value="Head Hunters">Head Hunters</option>
+        <option value="Kind Of Blue">Kind Of Blue</option>
+        <option value="Tune Up">Tune Up</option>
+        <option value="Bird And Diz">Bird And Diz</option>
+        <option value="Saxophone Colossus">Saxophone Colossus</option>
+        <option value="nenhumJazz">nenhum</option>
+      </select>
+
+      <select class="form-select" aria-label="Default select example" id="selectMetal">
+        <option selected>Selecione seu album de Metal</option>
+        <option value="Sacrament">Sacrament</option>
+        <option value="Epicus Doomicus Metallicus">Epicus Doomicus Metallicus</option>
+        <option value="The Sound Of Perseverance">The Sound Of Perseverance</option>
+        <option value="Rust In Peace">Rust In Peace</option>
+        <option value="Holy Land">Holy Land</option>
+        <option value="nenhumMetal">nenhum</option>
+      </select>
+
+      <select class="form-select" aria-label="Default select example" id="selectMPB">
+        <option selected>Selecione seu album de MPB</option>
+        <option value="Fa-Tal-gal">Fa-Tal-gal A Todo Vapor</option>
+        <option value="Tropicalia">Tropicalia</option>
+        <option value="Clube da Esquina">Clube da Esquina</option>
+        <option value="Transa">Transa</option>
+        <option value="Samba Esquema Novo">Samba Esquema Novo</option>
+        <option value="nenhumMPB">nenhum</option>
+      </select>
+
+      <select class="form-select" aria-label="Default select example" id="selectBlues">
+        <option selected>Selecione seu album de Blues</option>
+        <option value="Born Under a Bad Sign">Born Under a Bad Sign</option>
+        <option value="King of the Delta Blues Singers">King of the Delta Blues Singers</option>
+        <option value="Muddy Waters at Newport">Muddy Waters at Newport</option>
+        <option value="B.B. King Live at the Regal">B.B. King Live at the Regal</option>
+        <option value="John Lee Hooker House of the Blues">John Lee Hooker House of the Blues</option>
+        <option value="nenhumBlues">nenhum</option>
+      </select>
+      <div>
+        <button type="button" onclick="calcularTotal()" class="btn btn-success">Fazer Pedido</button>
+        <button type="button" onclick="limpar()" class="btn btn-outline-secondary">Limpar</button>
+      </div>
+      <div>
+         <span class="badge bg-primary">Total</span>
+        <span class="badge bg-danger" id="resultado"></span>
+      </div>
+      
+      <div id="pedido-pronto" class="pronto">
+        <h4>Álbuns:</h4>
+        <p id="Albuns-pronto">Nenhum álbum selecionado</p> <!-- Adicione este elemento -->
+        <h4>Rock:</h4>
+        <p id="Rock-Pronto"></p>
+        <h4>Jazz:</h4>
+        <p id="Jazz-Pronto"></p>
+        <h4>MPB:</h4>
+        <p id="MPB-Pronto"></p>
+        <h4>Metal:</h4>
+        <p id="Metal-Pronto"></p>
+        <h4>Blues:</h4>
+        <p id="Blues-Pronto"></p>
+    </div>
+    </div>
+
+    <button class="btn-whats" onclick="enviarWhatsApp()" id="enviarWhatsApp">Enviar Total via WhatsApp</button>
+</body>
+</html>
